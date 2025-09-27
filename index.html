@@ -12,19 +12,28 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Inter:wght@400;600&family=Barlow:wght@400;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Inter:wght@400;600&family=Barlow:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Critical CSS inline (optional: you can inline above-the-fold styles here) -->
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Vendor CSS (loaded async to avoid render-blocking) -->
+  <link rel="preload" as="style" href="assets/vendor/bootstrap/css/bootstrap.min.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css"></noscript>
+
+  <link rel="preload" as="style" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css"></noscript>
+
+  <link rel="preload" as="style" href="assets/vendor/glightbox/css/glightbox.min.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css"></noscript>
+
+  <link rel="preload" as="style" href="assets/vendor/swiper/swiper-bundle.min.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css"></noscript>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
 
   <!-- =======================================================
   * Template Name: Passion
@@ -1847,7 +1856,7 @@
         <div class="swiper-slide">
           <div class="team-card">
             <div class="team-image">
-              <img src="assets/img/person/Mahdi.webp" class="img-fluid" alt="Mahdi Mohammad" loading="lazy">
+              <img src="assets/img/person/Mahdi.webp" class="img-fluid" alt="Mahdi Mohammad">
               <div class="team-overlay">
                 <div class="social-links">
                   <a href="#"><i class="bi bi-twitter-x"></i></a>
@@ -1869,7 +1878,7 @@
         <div class="swiper-slide">
           <div class="team-card">
             <div class="team-image">
-              <img src="assets/img/person/Fardeen.webp" class="img-fluid" alt="Fardeen Noor Chowdhury" loading="lazy">
+              <img src="assets/img/person/Fardeen.webp" class="img-fluid" alt="Fardeen Noor Chowdhury">
               <div class="team-overlay">
                 <div class="social-links">
                   <a href="#"><i class="bi bi-twitter-x"></i></a>
@@ -1891,7 +1900,7 @@
         <div class="swiper-slide">
           <div class="team-card">
             <div class="team-image">
-              <img src="assets/img/person/Sarzil.webp" class="img-fluid" alt="Sarzil Hossain" loading="lazy">
+              <img src="assets/img/person/Sarzil.webp" class="img-fluid" alt="Sarzil Hossain">
               <div class="team-overlay">
                 <div class="social-links">
                   <a href="#"><i class="bi bi-twitter-x"></i></a>
@@ -1913,7 +1922,7 @@
         <div class="swiper-slide">
           <div class="team-card">
             <div class="team-image">
-              <img src="assets/img/person/Abrar.webp" class="img-fluid" alt="Mashrur Abrar" loading="lazy">
+              <img src="assets/img/person/Abrar.webp" class="img-fluid" alt="Mashrur Abrar">
               <div class="team-overlay">
                 <div class="social-links">
                   <a href="#"><i class="bi bi-twitter-x"></i></a>
@@ -1935,7 +1944,7 @@
         <div class="swiper-slide">
           <div class="team-card">
             <div class="team-image">
-              <img src="assets/img/person/Huzaifa.webp" class="img-fluid" alt="Huzaifa al-Walid" loading="lazy">
+              <img src="assets/img/person/Huzaifa.webp" class="img-fluid" alt="Huzaifa al-Walid">
               <div class="team-overlay">
                 <div class="social-links">
                   <a href="#"><i class="bi bi-twitter-x"></i></a>
@@ -1956,7 +1965,7 @@
           <div class="swiper-slide">
           <div class="team-card">
             <div class="team-image">
-              <img src="assets/img/person/Towfiq.webp" class="img-fluid" alt="Towfik" loading="lazy">
+              <img src="assets/img/person/Towfiq.webp" class="img-fluid" alt="Towfik">
               <div class="team-overlay">
                 <div class="social-links">
                   <a href="#"><i class="bi bi-twitter-x"></i></a>
@@ -1977,7 +1986,7 @@
         <div class="swiper-slide">
           <div class="team-card">
             <div class="team-image">
-              <img src="assets/img/person/Razzak.webp" class="img-fluid" alt="Razzak" loading="lazy">
+              <img src="assets/img/person/Razzak.webp" class="img-fluid" alt="Razzak">
               <div class="team-overlay">
                 <div class="social-links">
                   <a href="#"><i class="bi bi-twitter-x"></i></a>
@@ -1999,7 +2008,7 @@
         <div class="swiper-slide">
           <div class="team-card">
             <div class="team-image">
-              <img src="assets/img/person/Orpa.webp" class="img-fluid" alt="Umama Islam Orpa" loading="lazy">
+              <img src="assets/img/person/Orpa.webp" class="img-fluid" alt="Umama Islam Orpa">
               <div class="team-overlay">
                 <div class="social-links">
                   <a href="#"><i class="bi bi-twitter-x"></i></a>
@@ -2158,15 +2167,15 @@
   </div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" defer></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 
 </body>
 
