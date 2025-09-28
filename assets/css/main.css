@@ -166,7 +166,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 25px;
   margin-right: 8px;
 }
 
@@ -1172,13 +1172,18 @@ section,
   width: 100%;
   height: 100%;
   z-index: 1;
+  will-change: transform;
+  transform: translateZ(0);
 }
-
 .hero .hero-background img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+
+  /* ✅ Offload to GPU */
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .hero .hero-background .overlay {
@@ -1187,8 +1192,14 @@ section,
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--background-color), transparent 50%) 0%, color-mix(in srgb, var(--background-color), transparent 10%) 500%);
+  /* ✅ Precomputed lightweight gradient */
+  background: linear-gradient(135deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.1) 100%);
+  
+  /* ✅ Force GPU acceleration */
+  will-change: transform;
+  transform: translateZ(0);
 }
+
 
 .hero .container {
   position: relative;
@@ -1207,7 +1218,6 @@ section,
   letter-spacing: 1px;
   border-radius: 50px;
   margin-bottom: 20px;
-  backdrop-filter: blur(10px);
   border: 1px solid color-mix(in srgb, var(--accent-color), transparent 60%);
 }
 
@@ -1306,7 +1316,6 @@ section,
 .hero .feature-card {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
   border-radius: 16px;
   padding: 24px;
   display: flex;
