@@ -35,7 +35,7 @@
  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Inter:wght@400;600&family=Barlow:wght@400;700&family=Darker+Grotesque:wght@400;500;700&family=Questrial&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Inter:wght@400;600&family=Barlow:wght@400;700&family=Darker+Grotesque:wght@400;500;700&family=Questrial&display=swap" rel="stylesheet">
 
-  <!-- Critical CSS inline (optional: you can inline above-the-fold styles here) -->
+<link rel="preload" href="fonts/bootstrap-icons.woff2" as="font" type="font/woff2" crossorigin>
 
   <!-- Vendor CSS (loaded async to avoid render-blocking) -->
   <link rel="preload" as="style" href="assets/vendor/bootstrap/css/bootstrap.min.css"
@@ -63,7 +63,8 @@
   </noscript>
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="assets/css/main.css">
+<link rel="preload" href="css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/main.css"></noscript>
 
 
 </head>
