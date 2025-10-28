@@ -32,7 +32,7 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f4f9f7;
+  --background-color: #ffffff;
   --surface-color: #ffffff;
 }
 
@@ -882,12 +882,15 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
-  font-size: 16px;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
   margin-right: 10px;
   transition: 0.3s;
+  background-color: var(--accent-color);
+  font-size: 16px;
+  color: var(--contrast-color);
+
 }
+
+
 
 .footer .social-links a:hover {
   color: var(--accent-color);
@@ -944,11 +947,11 @@ h6 {
 .footer .copyright {
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 95%);
 }
 
 .footer .copyright p {
   margin-bottom: 0;
+  opacity: 50%;
 }
 
 .footer .credits {
@@ -2882,7 +2885,7 @@ section,
 .faq .faq-item {
   border-left: 4px solid transparent;
   border-radius: 10px;
-  background: var(--surface-color);
+  background: #f0faf9;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
   margin-bottom: 1.5rem;
   transition: all 0.3s ease;
@@ -2909,6 +2912,7 @@ section,
 }
 
 .faq .faq-item.faq-active .faq-header h4 {
+  font-size: 26px;
   color: var(--accent-color);
 }
 
@@ -2964,7 +2968,7 @@ section,
 .faq .faq-item .faq-header h4 {
   flex: 1;
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: var(--heading-color);
   transition: color 0.3s ease;
@@ -3013,7 +3017,8 @@ section,
   margin: 0;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   line-height: 1.6;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  opacity: 80%;
   overflow: hidden;
 }
 
@@ -3082,7 +3087,7 @@ section,
 .call-to-action .cta-shapes .shape.shape-1 {
   width: 300px;
   height: 300px;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 85%) 0%, color-mix(in srgb, var(--accent-color), transparent 95%) 100%);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 95%) 0%, color-mix(in srgb, var(--accent-color), transparent 99%) 100%);
   top: -150px;
   right: -100px;
 }
@@ -3090,7 +3095,7 @@ section,
 .call-to-action .cta-shapes .shape.shape-2 {
   width: 200px;
   height: 200px;
-  background: linear-gradient(225deg, color-mix(in srgb, var(--heading-color), transparent 85%) 0%, color-mix(in srgb, var(--heading-color), transparent 95%) 100%);
+  background: linear-gradient(225deg, color-mix(in srgb, var(--heading-color), transparent 95%) 0%, color-mix(in srgb, var(--heading-color), transparent 99%) 100%);
   bottom: -100px;
   left: 20%;
 }
@@ -3098,7 +3103,7 @@ section,
 .call-to-action .cta-shapes .shape.shape-3 {
   width: 150px;
   height: 150px;
-  background: linear-gradient(45deg, color-mix(in srgb, var(--accent-color), transparent 92%) 0%, color-mix(in srgb, var(--heading-color), transparent 92%) 100%);
+  background: linear-gradient(45deg, color-mix(in srgb, var(--accent-color), transparent 92%) 0%, color-mix(in srgb, var(--heading-color), transparent 99%) 100%);
   top: 30%;
   left: -75px;
 }
@@ -3178,11 +3183,11 @@ section,
 }
 
 .call-to-action .action-buttons .btn {
-  padding: 0.75rem 2rem;
+  padding: 16px 32px;
+  font-size: 16px;
   font-weight: 600;
-  border-radius: 8px;
+  border-radius: 50px;
   transition: all 0.3s ease;
-  font-size: 1rem;
   box-shadow: none;
 }
 
@@ -3627,6 +3632,9 @@ section,
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
+.team.section{
+  background-color: #f0faf9;
+}
 .team .swiper-wrapper {
   height: auto !important;
 }
