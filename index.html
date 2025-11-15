@@ -19,17 +19,26 @@
 {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "https://salesfind.org/#hero",
   "name": "SalesFind",
   "url": "https://salesfind.org",
   "logo": "https://salesfind.org/logo.png",
-  "description": "SalesFind is a B2B lead generation and sales enablement agency. We help businesses identify high-quality prospects, qualify leads with data-driven methods, and deliver them directly to your sales team — so you can focus on closing deals instead of chasing cold contacts.",
+  "description": "SalesFind is a B2B lead generation and sales enablement agency.",
   "sameAs": [
     "https://www.linkedin.com/company/salesfind/",
     "https://x.com/SalesFind_",
     "https://www.instagram.com/salesfind_/"
-  ]
+  ],
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "contactType": "sales",
+    "email": "salesfindofficial@gmail.com",
+    "availableLanguage": ["en"],
+    "url": "https://salesfind.org#contact"
+  }]
 }
-</script> <!--Organization schema-->
+</script>
+ <!--Organization schema-->
 
 <script type="application/ld+json">
 {
@@ -63,18 +72,18 @@
   ]
 }
 </script> <!--Faq schema-->
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "SalesFind Services",
+  "@id": "https://salesfind.org/#services",
   "provider": {
     "@type": "Organization",
-    "name": "SalesFind",
-    "url": "https://salesfind.org"
+    "@id": "https://salesfind.org/#featured-services"
   },
-  "serviceType": "B2B Lead Generation and Sales Enablement Services",
+  "name": "B2B Lead Generation and Sales Enablement",
+  "serviceType": "Lead Generation & Sales Enablement",
+  "areaServed": "Worldwide",
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Core Services",
@@ -84,8 +93,8 @@
         "itemOffered": {
           "@type": "Service",
           "name": "Lead Generation",
-          "description": "We deliver qualified B2B leads that match your ideal customer profile, so your sales team can focus on closing instead of chasing.",
-          "url": "mailto:salesfindofficial@gmail.com"
+          "description": "Qualified B2B leads based on ICP research and data verification.",
+          "url": "https://salesfind.org/#featured-services#lg"
         }
       },
       {
@@ -93,8 +102,8 @@
         "itemOffered": {
           "@type": "Service",
           "name": "Account Management",
-          "description": "We build and nurture strong client relationships on your behalf, helping boost retention, revenue, and long-term loyalty.",
-          "url": "mailto:salesfindofficial@gmail.com"
+          "description": "Relationship nurturing and communication on behalf of clients.",
+          "url": "https://salesfind.org/#featured-services#ac"
         }
       },
       {
@@ -102,32 +111,32 @@
         "itemOffered": {
           "@type": "Service",
           "name": "Email Marketing",
-          "description": "We create and manage data-driven email campaigns that engage prospects, warm up leads, and drive measurable results.",
-          "url": "mailto:salesfindofficial@gmail.com"
+          "description": "Managed outbound email campaigns using targeted messaging.",
+          "url": "https://salesfind.org/#featured-services#em"
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Cold Call",
-          "description": "Our team engages prospects directly via phone, creating opportunities and setting appointments for your sales pipeline efficiently.",
-          "url": "mailto:salesfindofficial@gmail.com"
+          "name": "Cold Calling",
+          "description": "Direct phone outreach to qualify leads or set appointments.",
+          "url": "https://salesfind.org/#featured-services#cc"
         }
       },
       {
-        "@type": "Offer",
+        "@type": "Service",
         "itemOffered": {
-          "@type": "Service",
           "name": "Data Analytics",
-          "description": "We analyze your sales and market data to uncover insights, optimize strategies, and drive informed business decisions.",
-          "url": "mailto:salesfindofficial@gmail.com"
+          "description": "Analysis and insights for optimization and better conversion.",
+          "url": "https://salesfind.org/#featured-services#da"
         }
       }
     ]
   }
 }
-</script> <!--Service schema-->
+</script>
+ <!--Service schema-->
 
 
 
@@ -499,7 +508,7 @@
 
                 <!-- Lead Generation -->
                 <div class="swiper-slide">
-                  <div class="service-card">
+                  <div class="service-card" id="lg">
                     <div class="icon-box">
                       <i class="bi bi-bar-chart-fill"></i>
                     </div>
@@ -516,7 +525,7 @@
 
                 <!-- Account Management -->
                 <div class="swiper-slide">
-                  <div class="service-card">
+                  <div class="service-card" id="ac">
                     <div class="icon-box">
                       <i class="bi bi-people-fill"></i>
                     </div>
@@ -533,7 +542,7 @@
 
                 <!-- Email Marketing -->
                 <div class="swiper-slide">
-                  <div class="service-card">
+                  <div class="service-card" id="em">
                     <div class="icon-box">
                       <i class="bi bi-envelope-fill"></i>
                     </div>
@@ -550,7 +559,7 @@
 
                 <!--Cold Calling-->
                 <div class="swiper-slide">
-                  <div class="service-card">
+                  <div class="service-card" id="cc">
                     <div class="icon-box">
                       <i class="bi bi-telephone-fill"></i>
                     </div>
@@ -566,8 +575,8 @@
                   </div>
                 </div>
                 <!--Data ANal-->
-                <div class="swiper-slide">
-                  <div class="service-card">
+                <div class="swiper-slide" >
+                  <div class="service-card" id="da">
                     <div class="icon-box">
                       <i class="bi bi-bar-chart-line-fill"></i>
                     </div>
