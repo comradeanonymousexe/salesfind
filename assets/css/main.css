@@ -1,32 +1,43 @@
-
 @charset "UTF-8";
 
 /* Fonts */
 /* Fonts */
 :root {
   --default-font: "Roboto", "Darker Grotesque", "Questrial", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Darker Grotesque",  sans-serif;
-  --nav-font: "Questrial",  sans-serif;
+  --heading-font: "Darker Grotesque", sans-serif;
+  --nav-font: "Questrial", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #cff0ec; /* Background color for the entire website, including individual sections */
-  --default-color: #0b1413; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #152d2a; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #289089; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #cff0ec;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #0b1413;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #152d2a;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #289089;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color: #289089; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #14201c; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #289089; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #ffffff;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #289089;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #14201c;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #289089;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -318,7 +329,7 @@ h6 {
 }
 
 
-.navmenu ul li a.btn-primary{
+.navmenu ul li a.btn-primary {
   background: var(--accent-color);
   color: var(--contrast-color);
   padding: 8px 38px;
@@ -1179,6 +1190,7 @@ section,
   will-change: transform;
   transform: translateZ(0);
 }
+
 .hero .hero-background img {
   width: 100%;
   height: 100%;
@@ -1197,8 +1209,8 @@ section,
   width: 100%;
   height: 100%;
   /* ✅ Precomputed lightweight gradient */
-  background: linear-gradient(135deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.1) 100%);
-  
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 100%);
+
   /* ✅ Force GPU acceleration */
   will-change: transform;
   transform: translateZ(0);
@@ -1229,17 +1241,19 @@ section,
 .hero h1 {
   font-size: clamp(48px, 6vw, 72px);
   font-weight: 700;
-  margin: 0 auto 20px auto; /* centers the block */
+  margin: 0 auto 20px auto;
+  /* centers the block */
   letter-spacing: -1px;
-  max-width: 600px;          /* constrains width */
-  text-align: center; 
+  max-width: 600px;
+  /* constrains width */
+  text-align: center;
   line-height: 0.9;
 }
 
 
 .hero p {
   font-family: Questrial;
-  font-size:  clamp(8px, 6vw, 20px);
+  font-size: clamp(8px, 6vw, 20px);
   line-height: 1.4;
   margin: 0 auto 40px auto;
   text-align: center;
@@ -1274,9 +1288,9 @@ section,
   color: var(--contrast-color);
 }
 
-.hero .hero-actions .retarded{
+.hero .hero-actions .retarded {
   background: #ffffff07;
-  color:#CFF0EC ;
+  color: #CFF0EC;
   padding: 16px 32px;
   font-size: 16px;
   font-weight: 600;
@@ -1340,11 +1354,11 @@ section,
     margin-top: 60px;
   }
 
-  .hero .hero-badge{
+  .hero .hero-badge {
     font-size: 12px;
   }
 
-  .hero p{
+  .hero p {
     font-size: 16px;
   }
 
@@ -1352,9 +1366,10 @@ section,
     font-size: 14px;
   }
 
-  .hero .hero-stats .stat-item .stat-number{
+  .hero .hero-stats .stat-item .stat-number {
     font-size: 24px;
   }
+
   .hero .feature-card {
     padding: 20px;
   }
@@ -1398,7 +1413,7 @@ section,
     font-size: 48px;
   }
 
-  .hero p{
+  .hero p {
     font-size: 16px;
   }
 
@@ -1447,7 +1462,7 @@ section,
   }
 }
 
-.about .content h3{
+.about .content h3 {
   font-weight: 600;
 }
 
@@ -3625,9 +3640,10 @@ section,
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
-.team.section{
+.team.section {
   background-color: #f0faf9;
 }
+
 .team .swiper-wrapper {
   height: auto !important;
 }
@@ -5776,6 +5792,19 @@ section,
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--heading-color);
-  margin-bottom: 18px;
+  margin-bottom: 30px;
   font-family: var(--heading-font);
+}
+
+
+.testimonial-more-cta .btn-primary {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px color-mix(in srgb, var(--accent-color), transparent 60%);
 }
