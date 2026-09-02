@@ -5459,33 +5459,87 @@ section,
   border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
-.clients-logo-row {
-  gap: 12px 24px !important;
+/* Marquee wrapper — clips the track and adds soft edge fades */
+.clients-marquee-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 12%,
+    black 88%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 12%,
+    black 88%,
+    transparent 100%
+  );
 }
 
-.client-name-badge {
-  background: var(--surface-color);
-  border: 1.5px solid color-mix(in srgb, var(--accent-color), transparent 70%);
-  color: var(--heading-color);
-  font-family: var(--heading-font);
-  font-weight: 600;
-  font-size: 0.95rem;
-  padding: 10px 22px;
-  border-radius: 6px;
-  letter-spacing: 0.02em;
-  transition: border-color 0.3s, box-shadow 0.3s;
+/* Scrolling track — holds all logos in a single row */
+.clients-marquee-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: clients-scroll 22s linear infinite;
 }
 
-.client-name-badge:hover {
-  border-color: var(--accent-color);
-  box-shadow: 0 2px 12px color-mix(in srgb, var(--accent-color), transparent 75%);
+.clients-marquee-wrapper:hover .clients-marquee-track {
+  animation-play-state: paused;
 }
 
-.client-name-badge.client-placeholder {
-  opacity: 0.4;
-  border-style: dashed;
-  font-style: italic;
+/* Individual logo slot */
+.clients-marquee-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 56px;
+  flex-shrink: 0;
 }
+
+/* The logos themselves — 80px is the industry-standard height for client strips */
+.client-logo-img {
+  height: 80px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
+  filter: grayscale(20%) opacity(0.85);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.client-logo-img:hover {
+  filter: grayscale(0%) opacity(1);
+  transform: scale(1.06);
+}
+
+@keyframes clients-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Accessibility: respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .clients-marquee-track {
+    animation: none;
+  }
+  .clients-marquee-item {
+    padding: 0 32px;
+  }
+  .clients-marquee-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: visible;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # How We Work / Process Section
