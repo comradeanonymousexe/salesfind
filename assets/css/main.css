@@ -187,10 +187,15 @@ h6 {
   overflow: hidden;
 }
 
-/* Global Header on Scroll
+/* Global Header on Scroll & Inner Pages
 ------------------------------*/
-.scrolled .header {
+.scrolled .header,
+.case-studies-page .header {
   --background-color: rgba(7, 12, 16, 0.8);
+}
+
+.case-studies-page .header {
+  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
 
 /*--------------------------------------------------------------
@@ -1057,7 +1062,7 @@ h6 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 160px 0 80px 0;
+  padding: 140px 0 50px 0;
   text-align: center;
   position: relative;
 }
@@ -1067,12 +1072,21 @@ h6 {
   background: color-mix(in srgb, var(--background-color), transparent 30%);
   position: absolute;
   inset: 0;
+  z-index: 0;
+}
+
+.page-title .container {
+  position: relative;
+  z-index: 1;
 }
 
 .page-title h1 {
-  font-size: 42px;
-  font-weight: 600;
+  font-family: var(--heading-font);
+  font-size: clamp(38px, 5vw, 56px);
+  font-weight: 700;
+  color: var(--heading-color);
   margin-bottom: 10px;
+  letter-spacing: -0.5px;
 }
 
 .page-title .breadcrumbs ol {
@@ -5946,8 +5960,8 @@ section,
 }
 
 .cs-article-thumb {
-  width: 90px;
-  height: 60px;
+  width: 96px;
+  height: 64px;
   border-radius: 8px;
   object-fit: contain;
   background: color-mix(in srgb, var(--heading-color), transparent 96%);
@@ -5962,10 +5976,13 @@ section,
 }
 
 .cs-article-info h3 {
-  font-size: 1.15rem;
+  font-family: var(--heading-font);
+  font-size: clamp(1.4rem, 2.5vw, 1.75rem);
   font-weight: 700;
-  margin: 0 0 4px;
+  line-height: 1.15;
+  margin: 0 0 6px;
   color: var(--heading-color);
+  letter-spacing: -0.3px;
 }
 
 .cs-article-info .cs-meta {

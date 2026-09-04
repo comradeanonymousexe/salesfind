@@ -7,7 +7,8 @@
   <title>Case Studies & Works | SalesFind Marketing and IT</title>
   <meta name="description"
     content="Explore detailed case studies and success stories of SalesFind Marketing and IT projects across e-commerce, NGOs, brand identity, and EdTech LMS platforms.">
-  <meta name="keywords" content="SalesFind case studies, web development portfolio, e-commerce CRM, NGO website design, brand design, EdTech LMS">
+  <meta name="keywords"
+    content="SalesFind case studies, web development portfolio, e-commerce CRM, NGO website design, brand design, EdTech LMS">
 
   <!-- Open Graph / Meta -->
   <meta property="og:title" content="Case Studies & Works | SalesFind Marketing and IT">
@@ -43,24 +44,8 @@
   <!-- Header -->
   <header id="header" class="header fixed-top">
 
-    <div class="topbar d-flex align-items-center dark-background">
-      <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a
-              href="mailto:salesfindofficial@gmail.com">salesfindofficial@gmail.com</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+8801718074411</span></i>
-        </div>
-        <div class="social-links d-none d-md-flex align-items-center">
-          <a href="https://x.com/SalesFind_" class="twitter" target="_blank"><i class="bi bi-twitter-x"></i></a>
-          <a href="https://www.facebook.com/profile.php?id=61585704358569" class="facebook" target="_blank"><i
-              class="bi bi-facebook"></i></a>
-          <a href="https://www.linkedin.com/company/salesfind/" class="linkedin" target="_blank"><i
-              class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
-    </div><!-- End Top Bar -->
+    <div class="branding d-flex align-items-cente">
 
-    <div class="branding d-flex align-items-center">
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center">
           <img src="assets/img/navbarlogo.svg" alt="SalesFind Logo">
@@ -71,38 +56,31 @@
             <li><a href="index.html#hero">Home</a></li>
             <li><a href="index.html#about">About</a></li>
             <li><a href="index.html#featured-services">Services</a></li>
-            <li><a href="case-studies.html" class="active">Work</a></li>
+            <li><a href="case-studies.html" class="active">Our Works</a></li>
             <li><a href="index.html#team">Team</a></li>
             <li><a href="index.html#contact" class="btn btn-primary">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
+
       </div>
+
     </div>
 
   </header>
   <!-- End Header -->
 
-  <main class="main" style="margin-top: 100px;">
+  <main class="main">
 
     <!-- Page Title Section -->
-    <div class="page-title accent-background py-5 text-center">
+    <div class="page-title text-center">
       <div class="container">
         <h1 class="fw-bold mb-2">Case Studies & Success Stories</h1>
-        <p class="mb-0 opacity-75 mx-auto" style="max-width: 680px;">
+        <!-- <p class="mb-0 opacity-75 mx-auto" style="max-width: 680px;">
           Detailed breakdowns of how SalesFind transforms organizations through high-converting web applications, custom CRMs, LMS platforms, brand identity systems, and organic growth campaigns.
-        </p>
+        </p> -->
       </div>
     </div>
-
-    <!-- Sticky Case Studies Sub-Nav -->
-    <nav class="cs-nav" id="cs-nav">
-      <div class="container">
-        <div class="cs-nav-inner" id="cs-nav-tabs">
-          <!-- Populated dynamically from JSON -->
-        </div>
-      </div>
-    </nav>
 
     <!-- Main Content Section -->
     <section class="section py-5">
@@ -124,11 +102,13 @@
           <a href="index.html" class="logo d-flex align-items-center">
             <span class="sitename">SalesFind</span>
           </a>
-          <p>SalesFind Marketing and IT is a full-service digital marketing and IT solutions provider helping B2B and B2C companies grow through SEO, content, ads, automation, and scalable systems.</p>
+          <p>SalesFind Marketing and IT is a full-service digital marketing and IT solutions provider helping B2B and
+            B2C companies grow through SEO, content, ads, automation, and scalable systems.</p>
           <div class="social-links d-flex mt-4">
             <a href="https://www.linkedin.com/company/salesfind/" target="_blank"><i class="bi bi-linkedin"></i></a>
             <a href="https://x.com/SalesFind_" target="_blank"><i class="bi bi-twitter-x"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=61585704358569" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61585704358569" target="_blank"><i
+                class="bi bi-facebook"></i></a>
           </div>
         </div>
 
@@ -196,7 +176,6 @@
     document.addEventListener('DOMContentLoaded', function () {
       var JSON_PATH = 'assets/data/casestudies.json';
       var container = document.getElementById('case-studies-container');
-      var navTabs = document.getElementById('cs-nav-tabs');
 
       if (!container) return;
 
@@ -205,17 +184,6 @@
         .then(function (cases) {
           if (!cases.length) return;
 
-          // Render Nav Tabs
-          cases.forEach(function (cs, index) {
-            var tab = document.createElement('button');
-            tab.className = 'cs-nav-tab' + (index === 0 ? ' active' : '');
-            tab.dataset.slug = cs.slug;
-            tab.textContent = cs.client + (cs.slug === 'econur-brand' ? ' (Brand Kit)' : '');
-            tab.addEventListener('click', function () {
-              openCaseStudy(cs.slug, true);
-            });
-            navTabs.appendChild(tab);
-          });
 
           // Render Articles
           cases.forEach(function (cs, index) {
@@ -239,8 +207,8 @@
             if (cs.testimonial && cs.testimonial.quote) {
               testimonialHtml =
                 '<div class="cs-testimonial">' +
-                  '<blockquote>“' + cs.testimonial.quote + '”</blockquote>' +
-                  '<cite>— ' + cs.testimonial.author + (cs.testimonial.role ? ', ' + cs.testimonial.role : '') + '</cite>' +
+                '<blockquote>“' + cs.testimonial.quote + '”</blockquote>' +
+                '<cite>— ' + cs.testimonial.author + (cs.testimonial.role ? ', ' + cs.testimonial.role : '') + '</cite>' +
                 '</div>';
             }
 
@@ -258,12 +226,12 @@
 
               galleryHtml =
                 '<div class="cs-gallery-wrapper">' +
-                  '<div class="cs-gallery-track">' + set1 + set2 + '</div>' +
+                '<div class="cs-gallery-track">' + set1 + set2 + '</div>' +
                 '</div>';
             } else if (imagesList.length === 1) {
               galleryHtml =
                 '<div class="cs-gallery-single">' +
-                  '<img src="' + imagesList[0] + '" alt="' + cs.client + ' Showcase" loading="lazy">' +
+                '<img src="' + imagesList[0] + '" alt="' + cs.client + ' Showcase" loading="lazy">' +
                 '</div>';
             }
 
@@ -275,8 +243,8 @@
               cs.solution.forEach(function (sol) {
                 solutionHtml +=
                   '<div class="cs-solution-card">' +
-                    '<h5>' + sol.title + '</h5>' +
-                    '<p>' + sol.description + '</p>' +
+                  '<h5>' + sol.title + '</h5>' +
+                  '<p>' + sol.description + '</p>' +
                   '</div>';
               });
               solutionHtml += '</div>';
@@ -289,16 +257,16 @@
               if (cs.results.type === 'table' && cs.results.rows) {
                 resultsHtml +=
                   '<table class="cs-results-table">' +
-                    '<thead>' +
-                      '<tr><th>Metric</th><th>Before Salesfind</th><th>With Salesfind</th></tr>' +
-                    '</thead>' +
-                    '<tbody>';
+                  '<thead>' +
+                  '<tr><th>Metric</th><th>Before Salesfind</th><th>With Salesfind</th></tr>' +
+                  '</thead>' +
+                  '<tbody>';
                 cs.results.rows.forEach(function (row) {
                   resultsHtml +=
                     '<tr>' +
-                      '<td><strong>' + row.metric + '</strong></td>' +
-                      '<td>' + row.before + '</td>' +
-                      '<td class="text-accent fw-bold">' + row.after + '</td>' +
+                    '<td><strong>' + row.metric + '</strong></td>' +
+                    '<td>' + row.before + '</td>' +
+                    '<td class="text-accent fw-bold">' + row.after + '</td>' +
                     '</tr>';
                 });
                 resultsHtml += '</tbody></table>';
@@ -314,34 +282,34 @@
             // CTA HTML
             var ctaHtml =
               '<div class="cs-cta">' +
-                '<a href="https://wa.me/8801718074411?text=Hi%20SalesFind,%20I%20am%20interested%20in%20a%20project%20similar%20to%20' + encodeURIComponent(cs.client) + '" target="_blank" class="cs-cta-primary">' +
-                  '<i class="bi bi-whatsapp"></i> Discuss Similar Project' +
-                '</a>' +
-                (cs.website ? '<a href="' + cs.website + '" target="_blank" rel="noopener" class="cs-cta-secondary"><i class="bi bi-box-arrow-up-right"></i> Visit Live Website</a>' : '') +
+              '<a href="https://wa.me/8801718074411?text=Hi%20SalesFind,%20I%20am%20interested%20in%20a%20project%20similar%20to%20' + encodeURIComponent(cs.client) + '" target="_blank" class="cs-cta-primary">' +
+              '<i class="bi bi-whatsapp"></i> Discuss Similar Project' +
+              '</a>' +
+              (cs.website ? '<a href="' + cs.website + '" target="_blank" rel="noopener" class="cs-cta-secondary"><i class="bi bi-box-arrow-up-right"></i> Visit Live Website</a>' : '') +
               '</div>';
 
             article.innerHTML =
               '<div class="cs-article-header">' +
-                '<img src="' + cs.heroImage + '" alt="' + cs.client + '" class="cs-article-thumb">' +
-                '<div class="cs-article-info">' +
-                  '<h3>' + cs.client + ' — ' + cs.tagline + '</h3>' +
-                  '<div class="cs-meta">' + servicesMeta + '</div>' +
-                '</div>' +
-                '<button class="cs-article-toggle" aria-label="Toggle Details">' +
-                  '<i class="bi bi-chevron-down"></i>' +
-                '</button>' +
+              '<img src="' + cs.heroImage + '" alt="' + cs.client + '" class="cs-article-thumb">' +
+              '<div class="cs-article-info">' +
+              '<h3>' + cs.client + ' — ' + cs.tagline + '</h3>' +
+              '<div class="cs-meta">' + servicesMeta + '</div>' +
+              '</div>' +
+              '<button class="cs-article-toggle" aria-label="Toggle Details">' +
+              '<i class="bi bi-chevron-down"></i>' +
+              '</button>' +
               '</div>' +
               '<div class="cs-article-body">' +
-                '<div class="cs-article-content">' +
-                  '<div class="cs-quickfacts">' + quickFactsHtml + '</div>' +
-                  galleryHtml +
-                  testimonialHtml +
-                  '<div class="cs-section-label">Client Background</div>' +
-                  '<div class="cs-background"><p>' + cs.background + '</p></div>' +
-                  solutionHtml +
-                  resultsHtml +
-                  ctaHtml +
-                '</div>' +
+              '<div class="cs-article-content">' +
+              '<div class="cs-quickfacts">' + quickFactsHtml + '</div>' +
+              galleryHtml +
+              testimonialHtml +
+              '<div class="cs-section-label">Client Background</div>' +
+              '<div class="cs-background"><p>' + cs.background + '</p></div>' +
+              solutionHtml +
+              resultsHtml +
+              ctaHtml +
+              '</div>' +
               '</div>';
 
             // Toggle click listener on header
@@ -383,18 +351,8 @@
           }
         });
 
-        // Update Nav Tabs active state
-        document.querySelectorAll('.cs-nav-tab').forEach(function (tab) {
-          if (tab.dataset.slug === slug) {
-            tab.classList.add('active');
-            tab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-          } else {
-            tab.classList.remove('active');
-          }
-        });
-
         if (scrollTo) {
-          var yOffset = -140; // account for fixed header + sticky nav
+          var yOffset = -80; // account for fixed header
           var y = targetArticle.getBoundingClientRect().top + window.pageYOffset + yOffset;
           window.scrollTo({ top: y, behavior: 'smooth' });
           history.replaceState(null, null, '#' + slug);
