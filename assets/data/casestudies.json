@@ -1,0 +1,309 @@
+[
+  {
+    "id": "econur-digital",
+    "client": "Econur Skincare",
+    "slug": "econur-digital",
+    "tagline": "From Friend-Circle Sales to Investment-Ready Brand",
+    "industry": "E-commerce · Skincare",
+    "services": [
+      "Website",
+      "CRM",
+      "Branding",
+      "Marketing Campaign"
+    ],
+    "website": "https://eco-nur.com",
+    "heroImage": "assets/img/portfolio/enwebsiteview.webp",
+    "galleryImages": [
+      "assets/img/portfolio/enwebsiteview.webp",
+      "assets/img/portfolio/endashboard01.webp",
+      "assets/img/portfolio/endashboard02.webp",
+      "assets/img/portfolio/enseoresult.webp"
+    ],
+    "testimonial": {
+      "quote": "Honestly, I did not quite hope for any growth vision of that capacity. With Salesfind as our marketing and IT partner, we now aim to go wholesale to national retailers like Shawpno and Meena Bazaar and eventually to Amazon!",
+      "author": "Rafit Ismail",
+      "role": "Founder & CEO, Econur Skincare"
+    },
+    "background": "Econur is a solo-founded premium handmade skincare brand based in Bangladesh. Previously they relied entirely on personal contacts for orders. With around 10 monthly sales from personal networks, Econur needed a professional website and e-commerce presence, a structured CRM and sales tracking system, and a clear social media identity — a stronger path toward credibility and investment readiness.",
+    "solution": [
+      {
+        "title": "E-commerce Landing Page",
+        "description": "A clean, conversion-focused website showcasing Econur's product varieties with a seamless WhatsApp-based ordering flow — designed specifically for the Bangladesh market."
+      },
+      {
+        "title": "Custom CRM System",
+        "description": "A purpose-built CRM to capture and manage leads, track customer relationships, identify re-order opportunities, and systematically request reviews."
+      },
+      {
+        "title": "Zero-Budget Growth Campaign",
+        "description": "An organic-first marketing strategy built on micro-influencer outreach, organic social engagement, and a referral loop — engineered for maximum impact at near-zero ad spend."
+      }
+    ],
+    "results": {
+      "type": "table",
+      "rows": [
+        {
+          "metric": "Monthly Sales",
+          "before": "~10 orders",
+          "after": "150 target (15× growth)"
+        },
+        {
+          "metric": "Website Visits",
+          "before": "0",
+          "after": "1,300+ in Month 1"
+        },
+        {
+          "metric": "Digital Presence",
+          "before": "None",
+          "after": "Website + CRM + Social"
+        },
+        {
+          "metric": "Brand Assets",
+          "before": "None",
+          "after": "Complete identity"
+        },
+        {
+          "metric": "Business Vision",
+          "before": "Selling to friends",
+          "after": "National retail + Amazon"
+        }
+      ]
+    },
+    "keyResult": "1,300+ website visits in 1 Month · 15× sales target in progress"
+  },
+  {
+    "id": "econur-brand",
+    "client": "Econur Skincare",
+    "slug": "econur-brand",
+    "tagline": "Complete Brand Kit Design — From Identity to Shelf-Ready Visuals",
+    "industry": "Brand Design · Skincare",
+    "services": [
+      "Brand Voice",
+      "Logo Design",
+      "UI/UX Design",
+      "Product Visuals",
+      "Label Design",
+      "Typography"
+    ],
+    "website": "https://eco-nur.com",
+    "heroImage": "assets/img/portfolio/1.webp",
+    "galleryImages": [
+      "assets/img/portfolio/1.webp",
+      "assets/img/portfolio/2.webp",
+      "assets/img/portfolio/3.webp",
+      "assets/img/portfolio/4.webp",
+      "assets/img/portfolio/5.webp",
+      "assets/img/portfolio/6.webp",
+      "assets/img/portfolio/7.webp",
+      "assets/img/portfolio/8.webp",
+      "assets/img/portfolio/9.webp",
+      "assets/img/portfolio/10.webp",
+      "assets/img/portfolio/11.webp"
+    ],
+    "testimonial": {
+      "quote": "Honestly, I did not quite hope for any growth vision of that capacity. With Salesfind as our marketing and IT partner, we now aim to go wholesale to national retailers like Shawpno and Meena Bazaar and eventually to Amazon!",
+      "author": "Rafit Ismail",
+      "role": "Founder & CEO, Econur Skincare"
+    },
+    "background": "As part of Econur's complete digital transformation, SalesFind designed their entire brand identity system from the ground up — establishing a premium, earthly visual language that positions the brand for national retail and international markets.",
+    "solution": [
+      {
+        "title": "Brand Voice & Positioning",
+        "description": "Crafted a distinctive brand voice, mission, vision, and strategic market positioning that communicates premium quality and natural authenticity."
+      },
+      {
+        "title": "Logo & Visual Identity",
+        "description": "Designed a refined logo system and cohesive visual identity that reflects the brand's commitment to 100% natural, handmade skincare."
+      },
+      {
+        "title": "UI/UX & Product Visuals",
+        "description": "Created the complete digital interface design along with professional product photography direction and visual compositions."
+      },
+      {
+        "title": "Label Design & Typography",
+        "description": "Developed product label systems and a curated typography palette that ensures shelf-ready appeal across all touchpoints."
+      }
+    ],
+    "results": {
+      "type": "bullets",
+      "items": [
+        "Complete brand identity system delivered — from voice to visuals",
+        "Shelf-ready label designs for all product varieties",
+        "Cohesive visual language across web, social, and packaging",
+        "Brand positioned for national retail and Amazon expansion"
+      ]
+    },
+    "keyResult": "Complete brand identity — voice, logo, UI/UX, labels, typography"
+  },
+  {
+    "id": "unnayan-parishad",
+    "client": "Unnayan Parishad",
+    "slug": "unnayan-parishad",
+    "tagline": "Building Digital Trust for a Donation-Driven NGO",
+    "industry": "Website · Non-profit",
+    "services": [
+      "Website Design",
+      "Website Development",
+      "Staff Training"
+    ],
+    "website": "https://unnayanparishad.org.bd",
+    "heroImage": "assets/img/portfolio/upwebsiteview.webp",
+    "galleryImages": [
+      "assets/img/portfolio/upwebsiteview.webp",
+      "assets/img/portfolio/upseoresult.webp"
+    ],
+    "testimonial": null,
+    "background": "Unnayan Parishad is a 30-volunteer NGO channeling Sadaqa and Zakat donations from Bangladesh and abroad toward community development. They needed a digital presence so potential donors could discover them online, along with a public-facing platform to build trust and demonstrate accountability. As a donation-driven organization, they required stronger transparency and visibility to attract international donors.",
+    "solution": [
+      {
+        "title": "Trust-Signal Website",
+        "description": "A crisp, credibility-focused website designed to make first-time visitors feel confident about donating — with clear mission framing, volunteer team presentation, and compelling impact storytelling."
+      },
+      {
+        "title": "Brand Assets & Digital Identity",
+        "description": "Visual identity aligned to Unnayan Parishad's core values of trust, community, and care — creating a coherent and professional public face for the organisation."
+      }
+    ],
+    "results": {
+      "type": "bullets",
+      "items": [
+        "8,000+ visits in first month",
+        "First-ever professional digital presence established",
+        "Global donor outreach campaign actively running"
+      ]
+    },
+    "keyResult": "8,000+ visits in first month · Global donation visibility live"
+  },
+  {
+    "id": "idf",
+    "client": "Integrated Development Forum (IDF)",
+    "slug": "idf",
+    "tagline": "Building Digital Trust for a Humanitarian Relief & Development NGO",
+    "industry": "Website · Non-profit",
+    "services": [
+      "Website Design",
+      "Website Development",
+      "Staff Training"
+    ],
+    "website": "https://idf.org.bd",
+    "heroImage": "assets/img/portfolio/idfwebsiteview.webp",
+    "galleryImages": [
+      "assets/img/portfolio/idfwebsiteview.webp",
+      "assets/img/portfolio/idfadminpanel.webp",
+      "assets/img/portfolio/idfseoresult.webp"
+    ],
+    "testimonial": {
+      "quote": "Salesfind delivered us a modern and professional website under deadline as well as implemented bonus features for us. We are quite happy with their professionalism.",
+      "author": "Shafiul Azam",
+      "role": "Executive Director, Integrated Development Forum (IDF)"
+    },
+    "background": "Integrated Development Forum (IDF) is a national humanitarian relief and development organization working in Bangladesh since 2007. Serving across 34 districts, IDF runs programs spanning humanitarian assistance, WASH, education, health & nutrition, sustainable livelihoods, and seasonal campaigns supported by 22+ international donor partners. IDF needed a modernized, high-performance digital presence to showcase their extensive field operations, build transparent accountability, and streamline global donations and Zakat contributions online.",
+    "solution": [
+      {
+        "title": "Trust-Signal Website",
+        "description": "A crisp, credibility-focused website designed to make first-time local and international donors feel confident about contributing — complete with a live Zakat Calculator, clear multi-signature financial accountability pathways, SDG alignment mapping, and compelling impact storytelling."
+      },
+      {
+        "title": "Brand Assets & Organizational Profiles",
+        "description": "Digital presentation of their organizational profile, regulatory credentials (NGO Affairs Bureau, Social Welfare, TIN), leadership teams, and 22+ global donor partnerships — creating a coherent, professional, and compliant public face."
+      }
+    ],
+    "results": {
+      "type": "bullets",
+      "items": [
+        "Professional digital presence established for national and global outreach",
+        "Interactive Zakat system and multi-channel donor pathways live",
+        "National reach visibility across 34 districts"
+      ]
+    },
+    "keyResult": "National reach visibility · Global donor outreach & Zakat calculator live"
+  },
+  {
+    "id": "yscop",
+    "client": "YSCOP",
+    "slug": "yscop",
+    "tagline": "A Professional Digital Home on a Micro Budget",
+    "industry": "Website · Non-profit",
+    "services": [
+      "Website Development"
+    ],
+    "website": "https://yscop.org",
+    "heroImage": "assets/img/portfolio/yscopwebsiteview.webp",
+    "galleryImages": [
+      "assets/img/portfolio/yscopwebsiteview.webp",
+      "assets/img/portfolio/yscopseoresult.webp"
+    ],
+    "testimonial": {
+      "quote": "I'm really happy with their work. They built a clean and good-looking site at a very affordable price, and delivered everything on time as promised. They're also very friendly and easy to work with, which made the whole process smooth.",
+      "author": "Sajib Raihan",
+      "role": "CEO, YSCOP"
+    },
+    "background": "YSCOP is a local NGO focused on relief interventions and education in Bangladesh. They needed a trustworthy digital presence — a professional website essential to attract volunteers, communicate their mission credibly, and build the public confidence required to grow their impact. With a very limited budget, they needed a solution that was professional, clean, and effective.",
+    "solution": [
+      {
+        "title": "Budget-Friendly Professional Website",
+        "description": "SalesFind delivered a super-budget-friendly professional website — clear proof that quality does not have to be expensive. The site communicates YSCOP's mission, relief work, and educational initiatives in a clean, credible, and accessible format. The result looks and feels like it cost ten times more than it did."
+      }
+    ],
+    "results": {
+      "type": "table",
+      "rows": [
+        {
+          "metric": "Website Visits",
+          "before": "0",
+          "after": "5,000+"
+        },
+        {
+          "metric": "Digital Presence",
+          "before": "None",
+          "after": "Fully established"
+        },
+        {
+          "metric": "Delivery",
+          "before": "—",
+          "after": "On time, on budget"
+        }
+      ]
+    },
+    "keyResult": "5,000+ website visits · Delivered on time and on budget"
+  },
+  {
+    "id": "jonelab",
+    "client": "J One Lab Studio",
+    "slug": "jonelab",
+    "tagline": "Engineering an Immersive EdTech Platform for Video Creators",
+    "industry": "LMS · Creative Education",
+    "services": [
+      "Website Design",
+      "LMS Architecture",
+      "Web Development",
+      "Platform Integration"
+    ],
+    "website": "https://jonelabstudio.com",
+    "heroImage": "assets/img/portfolio/jonelabwebsiteview.webp",
+    "galleryImages": [
+      "assets/img/portfolio/jonelabwebsiteview.webp"
+    ],
+    "testimonial": null,
+    "background": "J One Lab Studio is a creative education hub dedicated to training the next generation of video editors, motion designers, and post-production professionals. They needed a centralized, high-performance digital presence to transition their curriculum into a seamless online academy, giving students a dedicated space to learn, practice, and build their creative portfolios. As an EdTech platform focusing on video content, they required a robust Learning Management System (LMS) to handle course enrollments, high-quality video playback, progress tracking, and secure content delivery.",
+    "solution": [
+      {
+        "title": "Interactive EdTech Platform & LMS",
+        "description": "A fully integrated learning ecosystem designed for seamless student experiences — featuring intuitive course navigation, secure video hosting architecture, dedicated user dashboards, and streamlined checkout flows for new enrollments."
+      },
+      {
+        "title": "Creative Brand & Portfolio Presentation",
+        "description": "A visually striking website aesthetic aligned with the dynamic, fast-paced world of video editing. The platform is structured to showcase course roadmaps, instructor expertise, and compelling student showcases to build credibility and drive conversions."
+      }
+    ],
+    "results": {
+      "type": "bullets",
+      "items": [
+        "Custom LMS infrastructure and learning workflows in active deployment",
+        "Transitioning fragmented learning materials into a unified, professional online academy",
+        "End-to-end platform deployment in progress"
+      ]
+    },
+    "keyResult": "Complete LMS pipeline in active delivery"
+  }
+]
