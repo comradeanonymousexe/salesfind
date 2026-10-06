@@ -190,11 +190,13 @@ h6 {
 /* Global Header on Scroll & Inner Pages
 ------------------------------*/
 .scrolled .header,
-.case-studies-page .header {
+.case-studies-page .header,
+.legal-page .header {
   --background-color: rgba(7, 12, 16, 0.8);
 }
 
-.case-studies-page .header {
+.case-studies-page .header,
+.legal-page .header {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
 
